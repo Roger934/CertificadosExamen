@@ -1,6 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Definir la URL del API
+    window.appUtils = window.appUtils || {};
+    window.appUtils.API_URL = 'http://192.168.100.86:3000/api';
+
     // Verificar si ya está logueado
-    if (window.appUtils.isAuthenticated()) {
+    if (window.appUtils.isAuthenticated && window.appUtils.isAuthenticated()) {
         window.location.href = 'index.html';
         return;
     }

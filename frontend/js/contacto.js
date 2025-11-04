@@ -1,6 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Inicializar appUtils si no existe
+    window.appUtils = window.appUtils || {};
+    window.appUtils.API_URL = "http://192.168.100.86:3000/api";
+
     setupContactForm();
 });
+
 
 // ========================================
 // CONFIGURAR FORMULARIO DE CONTACTO

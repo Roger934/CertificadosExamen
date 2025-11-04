@@ -4,6 +4,10 @@ let examData = null;
 let isSubmitting = false;
 
 document.addEventListener("DOMContentLoaded", () => {
+  // Inicializar appUtils si no existe
+  window.appUtils = window.appUtils || {};
+  window.appUtils.API_URL = "http://192.168.100.86:3000/api";
+
   // Verificar autenticación
   if (!window.appUtils.isAuthenticated()) {
     window.appUtils.showAlert(
@@ -20,6 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Prevenir recarga de página
   prevenirRecargaPagina();
 });
+
 
 // ========================================
 // CARGAR DATOS DEL EXAMEN

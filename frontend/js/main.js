@@ -1,4 +1,7 @@
-const API_URL = "http://localhost:3000/api";
+// ========================================
+// CONFIGURACIÓN DEL SERVIDOR
+// ========================================
+const API_URL = "http://192.168.100.86:3000/api"; // IP fija del servidor
 
 // ========================================
 // INICIALIZACIÓN
@@ -33,13 +36,8 @@ function updateUIForLoggedInUser(user) {
     userDisplay.style.display = "inline-block";
   }
 
-  if (loginBtn) {
-    loginBtn.style.display = "none";
-  }
-
-  if (logoutBtn) {
-    logoutBtn.style.display = "inline-block";
-  }
+  if (loginBtn) loginBtn.style.display = "none";
+  if (logoutBtn) logoutBtn.style.display = "inline-block";
 }
 
 function updateUIForLoggedOutUser() {
@@ -47,17 +45,9 @@ function updateUIForLoggedOutUser() {
   const loginBtn = document.getElementById("login-btn");
   const logoutBtn = document.getElementById("logout-btn");
 
-  if (userDisplay) {
-    userDisplay.style.display = "none";
-  }
-
-  if (loginBtn) {
-    loginBtn.style.display = "inline-block";
-  }
-
-  if (logoutBtn) {
-    logoutBtn.style.display = "none";
-  }
+  if (userDisplay) userDisplay.style.display = "none";
+  if (loginBtn) loginBtn.style.display = "inline-block";
+  if (logoutBtn) logoutBtn.style.display = "none";
 }
 
 // ========================================
@@ -73,9 +63,7 @@ function setupEventListeners() {
     });
   }
 
-  if (logoutBtn) {
-    logoutBtn.addEventListener("click", handleLogout);
-  }
+  if (logoutBtn) logoutBtn.addEventListener("click", handleLogout);
 }
 
 // ========================================
@@ -86,39 +74,27 @@ async function handleLogout() {
     const token = localStorage.getItem("token");
 
     // Llamar al API de logout
-    const response = await fetch(`${API_URL}/auth/logout`, {
+    await fetch(`${API_URL}/auth/logout`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
         Authorization: `Bearer ${token}`,
       },
     });
-
-    // Limpiar localStorage independientemente de la respuesta
+  } catch (error) {
+    console.error("Error en logout:", error);
+  } finally {
+    // Limpiar localStorage y actualizar UI independientemente del resultado
     localStorage.removeItem("token");
     localStorage.removeItem("userData");
     localStorage.removeItem("examData");
 
-    // Mostrar alerta de éxito
+    updateUIForLoggedOutUser();
     showAlert("Sesión cerrada exitosamente", "success");
 
-    // Actualizar UI
-    updateUIForLoggedOutUser();
-
-    // Redirigir a inicio después de 1 segundo
     setTimeout(() => {
       window.location.href = "index.html";
     }, 1000);
-  } catch (error) {
-    console.error("Error en logout:", error);
-
-    // Limpiar localStorage de todas formas
-    localStorage.removeItem("token");
-    localStorage.removeItem("userData");
-    localStorage.removeItem("examData");
-
-    updateUIForLoggedOutUser();
-    window.location.href = "index.html";
   }
 }
 
@@ -179,12 +155,14 @@ function formatCurrency(amount) {
   }).format(amount);
 }
 
-// Exportar funciones para uso en otros archivos
+// ========================================
+// EXPORTAR FUNCIONES PARA OTROS SCRIPTS
+// ========================================
 window.appUtils = {
   isAuthenticated,
   getUserData,
   showAlert,
   formatDate,
   formatCurrency,
-  API_URL,
+  API_URL, // ahora apunta a 192.168.100.86
 };
