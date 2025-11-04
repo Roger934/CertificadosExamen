@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Certificaciones - Credentia</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/certificaciones.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo-section">
+            <img src="images/logo.png" alt="Credentia Logo" class="logo" />
+            <div class="brand">
+              <h1 class="brand-name">Credentia</h1>
+              <p class="brand-tagline">
+                Demuestra lo que sabes, certifica tu talento.
+              </p>
+            </div>
+          </div>
+
+          <nav class="nav">
+            <ul class="nav-list">
+              <li><a href="index.html" class="nav-link">Inicio</a></li>
+              <li>
+                <a href="certificaciones.html" class="nav-link active"
+                  >Certificaciones</a
+                >
+              </li>
+              <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+              <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+            </ul>
+          </nav>
+
+          <div class="auth-section">
+            <span
+              id="user-display"
+              class="user-display"
+              style="display: none"
+            ></span>
+            <button id="login-btn" class="btn btn-primary">
+              Iniciar Sesión
+            </button>
+            <button
+              id="logout-btn"
+              class="btn btn-secondary"
+              style="display: none"
+            >
+              Cerrar Sesión
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- PÁGINA DE CERTIFICACIONES -->
+    <section class="certifications-section">
+      <div class="container">
+        <div class="page-header">
+          <h2 class="section-title">Certificaciones Disponibles</h2>
+          <p class="section-subtitle">
+            Valida tus conocimientos con nuestras certificaciones oficiales
+          </p>
+        </div>
+
+        <!-- CERTIFICACIÓN 1: JAVASCRIPT -->
+        <div class="certification-card" data-cert-id="1">
+          <div class="cert-header">
+            <div class="cert-icon-large">{ JS }</div>
+            <div class="cert-title-section">
+              <h3 class="cert-name">Certificación JavaScript Advanced</h3>
+              <span class="cert-badge active">Disponible Ahora</span>
+            </div>
+          </div>
+
+          <div class="cert-body">
+            <div class="cert-description">
+              <h4>📋 Descripción</h4>
+              <p>
+                La Certificación JavaScript Advanced valida tu dominio profundo
+                del lenguaje de programación más versátil de la web. Esta
+                certificación demuestra que posees conocimientos avanzados en
+                ES6+, programación asíncrona, manejo del DOM, closures,
+                prototipos y patrones de diseño modernos.
+              </p>
+            </div>
+
+            <div class="cert-advantages">
+              <h4>✨ Ventajas de obtener esta certificación</h4>
+              <ul>
+                <li>
+                  Validación oficial de tus habilidades en JavaScript moderno
+                </li>
+                <li>
+                  Aumento de oportunidades laborales en desarrollo web frontend
+                  y fullstack
+                </li>
+                <li>
+                  Reconocimiento en la industria tech como desarrollador
+                  JavaScript senior
+                </li>
+                <li>Mayor competitividad salarial en el mercado laboral</li>
+              </ul>
+            </div>
+
+            <div class="cert-details-grid">
+              <div class="cert-detail">
+                <span class="detail-icon">🎯</span>
+                <div>
+                  <strong>Puntuación Mínima</strong>
+                  <p>75 puntos</p>
+                </div>
+              </div>
+              <div class="cert-detail">
+                <span class="detail-icon">⏱️</span>
+                <div>
+                  <strong>Tiempo del Examen</strong>
+                  <p>20 minutos</p>
+                </div>
+              </div>
+              <div class="cert-detail">
+                <span class="detail-icon">💰</span>
+                <div>
+                  <strong>Costo</strong>
+                  <p class="cert-price">$1,500 MXN</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cert-actions">
+              <button class="btn btn-primary btn-pay" data-cert-id="1">
+                💳 Pagar Certificación
+              </button>
+              <button class="btn btn-accent btn-start" data-cert-id="1">
+                🚀 Iniciar Examen
+              </button>
+            </div>
+
+            <div class="payment-status" data-cert-id="1" style="display: none">
+              <span class="status-badge paid">✓ Pago Realizado</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CERTIFICACIÓN 2: JAVA -->
+        <div class="certification-card" data-cert-id="2">
+          <div class="cert-header">
+            <div class="cert-icon-large">☕ JAVA</div>
+            <div class="cert-title-section">
+              <h3 class="cert-name">Certificación Java Professional</h3>
+              <span class="cert-badge active">Disponible Ahora</span>
+            </div>
+          </div>
+
+          <div class="cert-body">
+            <div class="cert-description">
+              <h4>📋 Descripción</h4>
+              <p>
+                La Certificación Java Professional certifica tu experiencia en
+                el desarrollo con uno de los lenguajes más demandados en el
+                ámbito empresarial. Esta certificación cubre programación
+                orientada a objetos, colecciones, streams, multithreading,
+                manejo de excepciones y las mejores prácticas en desarrollo
+                Java.
+              </p>
+            </div>
+
+            <div class="cert-advantages">
+              <h4>✨ Ventajas de obtener esta certificación</h4>
+              <ul>
+                <li>
+                  Reconocimiento como desarrollador Java a nivel profesional
+                </li>
+                <li>
+                  Acceso a posiciones en empresas Fortune 500 y corporaciones
+                  globales
+                </li>
+                <li>
+                  Validación de conocimientos en arquitecturas empresariales
+                  robustas
+                </li>
+                <li>
+                  Mejor posicionamiento en proyectos de backend y sistemas
+                  distribuidos
+                </li>
+              </ul>
+            </div>
+
+            <div class="cert-details-grid">
+              <div class="cert-detail">
+                <span class="detail-icon">🎯</span>
+                <div>
+                  <strong>Puntuación Mínima</strong>
+                  <p>80 puntos</p>
+                </div>
+              </div>
+              <div class="cert-detail">
+                <span class="detail-icon">⏱️</span>
+                <div>
+                  <strong>Tiempo del Examen</strong>
+                  <p>25 minutos</p>
+                </div>
+              </div>
+              <div class="cert-detail">
+                <span class="detail-icon">💰</span>
+                <div>
+                  <strong>Costo</strong>
+                  <p class="cert-price">$2,000 MXN</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cert-actions">
+              <button class="btn btn-primary btn-pay" data-cert-id="2">
+                💳 Pagar Certificación
+              </button>
+              <button class="btn btn-accent btn-start" data-cert-id="2">
+                🚀 Iniciar Examen
+              </button>
+            </div>
+
+            <div class="payment-status" data-cert-id="2" style="display: none">
+              <span class="status-badge paid">✓ Pago Realizado</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CERTIFICACIÓN 3: HTML -->
+        <div class="certification-card" data-cert-id="3">
+          <div class="cert-header">
+            <div class="cert-icon-large">&lt;HTML/&gt;</div>
+            <div class="cert-title-section">
+              <h3 class="cert-name">Certificación HTML5 Specialist</h3>
+              <span class="cert-badge active">Disponible Ahora</span>
+            </div>
+          </div>
+
+          <div class="cert-body">
+            <div class="cert-description">
+              <h4>📋 Descripción</h4>
+              <p>
+                La Certificación HTML5 Specialist valida tu dominio del lenguaje
+                fundamental de la web moderna. Esta certificación evalúa tus
+                conocimientos en HTML5 semántico, accesibilidad web, APIs
+                nativas del navegador, formularios avanzados, multimedia y las
+                mejores prácticas de estructuración de documentos web.
+              </p>
+            </div>
+
+            <div class="cert-advantages">
+              <h4>✨ Ventajas de obtener esta certificación</h4>
+              <ul>
+                <li>
+                  Fundamento sólido para cualquier carrera en desarrollo web
+                </li>
+                <li>
+                  Diferenciación al demostrar conocimiento profundo de HTML5
+                  semántico
+                </li>
+                <li>
+                  Mayor capacidad para crear sitios web accesibles e inclusivos
+                </li>
+                <li>
+                  Complemento perfecto para certificaciones de CSS y JavaScript
+                </li>
+              </ul>
+            </div>
+
+            <div class="cert-details-grid">
+              <div class="cert-detail">
+                <span class="detail-icon">🎯</span>
+                <div>
+                  <strong>Puntuación Mínima</strong>
+                  <p>70 puntos</p>
+                </div>
+              </div>
+              <div class="cert-detail">
+                <span class="detail-icon">⏱️</span>
+                <div>
+                  <strong>Tiempo del Examen</strong>
+                  <p>15 minutos</p>
+                </div>
+              </div>
+              <div class="cert-detail">
+                <span class="detail-icon">💰</span>
+                <div>
+                  <strong>Costo</strong>
+                  <p class="cert-price">$1,200 MXN</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cert-actions">
+              <button class="btn btn-primary btn-pay" data-cert-id="3">
+                💳 Pagar Certificación
+              </button>
+              <button class="btn btn-accent btn-start" data-cert-id="3">
+                🚀 Iniciar Examen
+              </button>
+            </div>
+
+            <div class="payment-status" data-cert-id="3" style="display: none">
+              <span class="status-badge paid">✓ Pago Realizado</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CERTIFICACIÓN 4: CSS -->
+        <div class="certification-card" data-cert-id="4">
+          <div class="cert-header">
+            <div class="cert-icon-large">🎨 CSS</div>
+            <div class="cert-title-section">
+              <h3 class="cert-name">Certificación CSS Master Designer</h3>
+              <span class="cert-badge active">Disponible Ahora</span>
+            </div>
+          </div>
+
+          <div class="cert-body">
+            <div class="cert-description">
+              <h4>📋 Descripción</h4>
+              <p>
+                La Certificación CSS Master Designer acredita tu experiencia en
+                el diseño y estilización avanzada de interfaces web. Esta
+                certificación cubre Flexbox, Grid, animaciones, transiciones,
+                responsive design, preprocesadores, metodologías CSS modernas y
+                optimización de rendimiento en estilos.
+              </p>
+            </div>
+
+            <div class="cert-advantages">
+              <h4>✨ Ventajas de obtener esta certificación</h4>
+              <ul>
+                <li>
+                  Reconocimiento como experto en diseño de interfaces web
+                  profesionales
+                </li>
+                <li>
+                  Habilidad validada para crear experiencias visuales atractivas
+                  y funcionales
+                </li>
+                <li>
+                  Mayor demanda en roles de frontend developer y UI developer
+                </li>
+                <li>
+                  Capacidad comprobada en diseño responsive y mobile-first
+                </li>
+              </ul>
+            </div>
+
+            <div class="cert-details-grid">
+              <div class="cert-detail">
+                <span class="detail-icon">🎯</span>
+                <div>
+                  <strong>Puntuación Mínima</strong>
+                  <p>75 puntos</p>
+                </div>
+              </div>
+              <div class="cert-detail">
+                <span class="detail-icon">⏱️</span>
+                <div>
+                  <strong>Tiempo del Examen</strong>
+                  <p>18 minutos</p>
+                </div>
+              </div>
+              <div class="cert-detail">
+                <span class="detail-icon">💰</span>
+                <div>
+                  <strong>Costo</strong>
+                  <p class="cert-price">$1,400 MXN</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cert-actions">
+              <button class="btn btn-primary btn-pay" data-cert-id="4">
+                💳 Pagar Certificación
+              </button>
+              <button class="btn btn-accent btn-start" data-cert-id="4">
+                🚀 Iniciar Examen
+              </button>
+            </div>
+
+            <div class="payment-status" data-cert-id="4" style="display: none">
+              <span class="status-badge paid">✓ Pago Realizado</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Credentia</h3>
+            <p>
+              Plataforma líder en certificaciones de programación y desarrollo
+              de software.
+            </p>
+            <div class="social-links">
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                class="social-link"
+              >
+                <span>📷</span> Instagram
+              </a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h4>Enlaces Rápidos</h4>
+            <ul class="footer-links">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="certificaciones.html">Certificaciones</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+              <li><a href="nosotros.html">Nosotros</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Contacto</h4>
+            <p>📧 info@credentia.com</p>
+            <p>📞 +52 449 123 4567</p>
+            <p>📍 Aguascalientes, México</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Credentia. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/main.js"></script>
+    <script src="js/certificaciones.js"></script>
+  </body>
+</html>

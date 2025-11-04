@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto - Credentia</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/contacto.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo-section">
+            <img src="images/logo.png" alt="Credentia Logo" class="logo" />
+            <div class="brand">
+              <h1 class="brand-name">Credentia</h1>
+              <p class="brand-tagline">
+                Demuestra lo que sabes, certifica tu talento.
+              </p>
+            </div>
+          </div>
+
+          <nav class="nav">
+            <ul class="nav-list">
+              <li><a href="index.html" class="nav-link">Inicio</a></li>
+              <li>
+                <a href="certificaciones.html" class="nav-link"
+                  >Certificaciones</a
+                >
+              </li>
+              <li>
+                <a href="contacto.html" class="nav-link active">Contacto</a>
+              </li>
+              <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+            </ul>
+          </nav>
+
+          <div class="auth-section">
+            <span
+              id="user-display"
+              class="user-display"
+              style="display: none"
+            ></span>
+            <button id="login-btn" class="btn btn-primary">
+              Iniciar Sesión
+            </button>
+            <button
+              id="logout-btn"
+              class="btn btn-secondary"
+              style="display: none"
+            >
+              Cerrar Sesión
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- CONTACTO SECTION -->
+    <section class="contact-section">
+      <div class="container">
+        <div class="page-header">
+          <h2 class="section-title">Contáctanos</h2>
+          <p class="section-subtitle">
+            ¿Tienes alguna pregunta o comentario? Estamos aquí para ayudarte
+          </p>
+        </div>
+
+        <div class="contact-container">
+          <!-- FORMULARIO DE CONTACTO -->
+          <div class="contact-form-card">
+            <h3>Envíanos un mensaje</h3>
+            <form id="contact-form" class="contact-form">
+              <div class="form-group">
+                <label for="nombre">Nombre Completo *</label>
+                <input
+                  type="text"
+                  id="nombre"
+                  name="nombre"
+                  class="form-input"
+                  placeholder="Ingresa tu nombre completo"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Correo Electrónico *</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="correo@ejemplo.com"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="mensaje">Mensaje / Pregunta *</label>
+                <textarea
+                  id="mensaje"
+                  name="mensaje"
+                  class="form-textarea"
+                  rows="6"
+                  placeholder="Escribe tu pregunta o comentario aquí..."
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full">
+                📧 Enviar Mensaje
+              </button>
+            </form>
+          </div>
+
+          <!-- INFORMACIÓN DE CONTACTO -->
+          <div class="contact-info-card">
+            <h3>Información de Contacto</h3>
+
+            <div class="info-item">
+              <div class="info-icon">📧</div>
+              <div class="info-content">
+                <strong>Email</strong>
+                <p>info@credentia.com</p>
+                <p>soporte@credentia.com</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">📞</div>
+              <div class="info-content">
+                <strong>Teléfono</strong>
+                <p>+52 449 123 4567</p>
+                <p>Lun - Vie: 9:00 AM - 6:00 PM</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">📍</div>
+              <div class="info-content">
+                <strong>Ubicación</strong>
+                <p>Aguascalientes, Aguascalientes</p>
+                <p>México</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">📷</div>
+              <div class="info-content">
+                <strong>Redes Sociales</strong>
+                <p>
+                  <a
+                    href="https://www.instagram.com"
+                    target="_blank"
+                    class="social-link-contact"
+                    >Instagram: @credentia_oficial</a
+                  >
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-section">
+              <h4>Preguntas Frecuentes</h4>
+              <ul class="faq-list">
+                <li>
+                  ¿Cuánto tiempo tarda la respuesta? Generalmente 24-48 horas
+                  hábiles
+                </li>
+                <li>
+                  ¿Puedo solicitar información sobre certificaciones? ¡Por
+                  supuesto!
+                </li>
+                <li>¿Ofrecen soporte técnico? Sí, estamos para ayudarte</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Credentia</h3>
+            <p>
+              Plataforma líder en certificaciones de programación y desarrollo
+              de software.
+            </p>
+            <div class="social-links">
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                class="social-link"
+              >
+                <span>📷</span> Instagram
+              </a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h4>Enlaces Rápidos</h4>
+            <ul class="footer-links">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="certificaciones.html">Certificaciones</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+              <li><a href="nosotros.html">Nosotros</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Contacto</h4>
+            <p>📧 info@credentia.com</p>
+            <p>📞 +52 449 123 4567</p>
+            <p>📍 Aguascalientes, México</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Credentia. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/main.js"></script>
+    <script src="js/contacto.js"></script>
+  </body>
+</html>

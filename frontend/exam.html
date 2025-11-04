@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Examen - Credentia</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/exam.css" />
+  </head>
+  <body>
+    <!-- HEADER SIMPLIFICADO -->
+    <header class="header exam-header-fixed">
+      <div class="container">
+        <div class="exam-header-content">
+          <div class="logo-section">
+            <img
+              src="images/logo.png"
+              alt="Credentia Logo"
+              class="logo-small"
+            />
+            <span class="brand-name-small">Credentia</span>
+          </div>
+
+          <div class="exam-info-header">
+            <span id="user-display-exam" class="user-display-exam"></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- SECCIÓN DEL EXAMEN -->
+    <section class="exam-section">
+      <div class="container">
+        <!-- INFORMACIÓN DEL EXAMEN Y TEMPORIZADOR -->
+        <div class="exam-info-card">
+          <div class="exam-details">
+            <h2 id="exam-title">Cargando examen...</h2>
+            <div class="exam-metadata">
+              <span id="exam-date"></span>
+              <span id="exam-location">📍 Aguascalientes, MX</span>
+            </div>
+          </div>
+
+          <!-- ⭐ TEMPORIZADOR -->
+          <div class="timer-container">
+            <div class="timer-label">⏱️ Tiempo Restante</div>
+            <div id="timer-display" class="timer-display">--:--</div>
+            <div id="timer-warning" class="timer-warning" style="display: none">
+              ⚠️ ¡Tiempo por agotarse!
+            </div>
+          </div>
+        </div>
+
+        <!-- FORMULARIO DEL EXAMEN -->
+        <form id="exam-form" class="exam-form">
+          <div id="questions-container">
+            <!-- Las preguntas se renderizan dinámicamente aquí -->
+          </div>
+
+          <div class="exam-actions">
+            <button type="submit" class="btn btn-primary btn-submit">
+              📝 Enviar Respuestas
+            </button>
+          </div>
+        </form>
+
+        <!-- LOADER -->
+        <div id="exam-loader" class="exam-loader">
+          <div class="loader-spinner"></div>
+          <p>Cargando examen...</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER SIMPLIFICADO -->
+    <footer class="footer-simple">
+      <div class="container">
+        <p>&copy; 2025 Credentia. Sistema de Certificaciones</p>
+      </div>
+    </footer>
+
+    <!-- MODAL DE RESULTADO -->
+    <div id="result-modal" class="modal" style="display: none">
+      <div class="modal-content">
+        <div id="result-icon" class="result-icon"></div>
+        <h2 id="result-title"></h2>
+        <div id="result-message" class="result-message"></div>
+        <div id="result-score" class="result-score"></div>
+        <div class="modal-actions">
+          <button
+            id="download-cert-btn"
+            class="btn btn-primary"
+            style="display: none"
+          >
+            📜 Descargar Certificado
+          </button>
+          <button id="close-modal-btn" class="btn btn-secondary">Cerrar</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/main.js"></script>
+    <script src="js/exam.js"></script>
+  </body>
+</html>
