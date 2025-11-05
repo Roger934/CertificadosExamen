@@ -5,7 +5,7 @@ const certificaciones = [
         nombre: 'Certificación JavaScript Advanced',
         descripcion: 'Valida tu dominio profundo del lenguaje de programación más versátil de la web.',
         puntuacionMinima: 75,
-        tiempoExamen: 20,
+        tiempoExamen: 3,
         costo: 1500,
         activa: true, // Solo esta certificación funcionará
         disponibleDesde: '2025-01-01',
@@ -17,7 +17,7 @@ const certificaciones = [
         nombre: 'Certificación Java Professional',
         descripcion: 'Certifica tu experiencia en desarrollo con uno de los lenguajes más demandados.',
         puntuacionMinima: 80,
-        tiempoExamen: 25,
+        tiempoExamen: 3,
         costo: 2000,
         activa: false, // Deshabilitada
         disponibleDesde: '2025-06-01',
@@ -29,7 +29,7 @@ const certificaciones = [
         nombre: 'Certificación HTML5 Specialist',
         descripcion: 'Valida tu dominio del lenguaje fundamental de la web moderna.',
         puntuacionMinima: 70,
-        tiempoExamen: 15,
+        tiempoExamen: 3,
         costo: 1200,
         activa: false, // Deshabilitada
         disponibleDesde: '2025-08-15',
@@ -41,7 +41,7 @@ const certificaciones = [
         nombre: 'Certificación CSS Master Designer',
         descripcion: 'Acredita tu experiencia en diseño y estilización avanzada de interfaces web.',
         puntuacionMinima: 75,
-        tiempoExamen: 18,
+        tiempoExamen: 3,
         costo: 1400,
         activa: false, // Deshabilitada
         disponibleDesde: '2025-09-20',

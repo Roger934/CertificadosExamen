@@ -23,7 +23,7 @@ const authRequired = (req, res, next) => {
     if (!tokenData) {
         return res.status(401).json({
             success: false,
-            message: 'Token inválido o expirado. Por favor, inicia sesión nuevamente'
+            message: 'Token inválido. Por favor, inicia sesión nuevamente'
         });
     }
 

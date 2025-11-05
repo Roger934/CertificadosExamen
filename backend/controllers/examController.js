@@ -39,6 +39,7 @@ const startExam = (req, res) => {
     }
 
     // Verificar si ya pagó
+    // BADERAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
     const pago = pagos.find(p => p.userId === userId && p.certificationId === parseInt(certificationId));
 
     if (!pago) {
